@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Application - MBS</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- icons kit -->
+    <!-- <script src="https://kit.fontawesome.com/c666d2bdb2.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+
+    <!-- application title and icon -->
+    <div class="title">
+        <h1 class="titleHead">To-Do List Application</h1>
+        <img class="titleImg" src="Pictures/todo-icon.png" alt="stopwatch-icon">
+    </div>
+    <br><br>
+
+    <!-- guide body -->
+    <div class="mainBody guideBody">
+        <h2 class="guideHead">Guide:</h2>
+        <p class="guideLine"><strong>Start</strong> - This button will start the stop-watch.</p>
+        <p class="guideLine"><strong>Pause</strong> - This button will pause the running stop-watch. You can resume by
+            clicking again on start button.</p>
+        <p class="guideLine"><strong>Reset </strong> - This button will reset the stop-watch at 00:00:00 and clears the
+            "History Log".</p>
+        <p class="guideLine"><strong>Save </strong>- This button will save the current stop-watch time in the log. You
+            can view it under the "History Log" section below.</p>
+    </div>
+
+    <!-- todo list main body -->
+    <div class="mainBody">
+        <!-- input field -->
+        <div class="inputField">
+            <input id="userInput" class="userInput" type="text" autofocus placeholder="Enter the task" maxlength="30">
+            <button id="addBtn" class="addBtn button" onclick="addToList()"> Add to list</button>
+        </div>
+
+        <!-- todo list-->
+        <div class="List">
+            <h2 class="listHead">To-Do List</h2>
+            <ol id="todoList">(No list item to display)</ol>
+        </div>
+
+        <div class="clearList">
+            <button class="delBtn button" onclick="clearList()">Clear List</button>
+        </div>
+    </div>
+<!-- <i class="far fa-edit"></i> --> <!-- edit icon -->
+<!-- <i class="far fa-trash-alt"></i> --> <!-- delete icon -->
+<!-- <i class="far fa-check-square"></i> --> <!-- done icon -->
+
+    <!-- developer credits -->
+    <br><br>
+    <h2 class="credits">Developed By: Muhammad Bilal Siddiqui <br></h2>
+    <h4 class="credits">(Web and Mobile Hybrid Application Development Program - SMIT)</h4>
+
+</body>
+
+<!-- js file -->
+<script src="app.js"></script>
+
+</html>
