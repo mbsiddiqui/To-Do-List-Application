@@ -24,6 +24,10 @@
     font-family: head;
     text-decoration: underline;
 }
+.guideLineSpecial{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 p>strong{
     text-decoration: underline;
 }

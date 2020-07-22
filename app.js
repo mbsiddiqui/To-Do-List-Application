@@ -48,6 +48,7 @@ function addToList() {
         /* giving attributes to editBtn */
         editBtn.setAttribute("class", "todoItem");
         editBtn.setAttribute("class", "editBtn button");
+        doneBtn.setAttribute("id", "editBtn");
         /* giving an 'onClick' event to the button */
         editBtn.setAttribute("onClick", "editItem(this)");
         editBtn.appendChild(editText);
@@ -74,7 +75,8 @@ function addToList() {
 
 /* function to strikethrough the item that are done */
 function doneItem(e){
-    e.parentNode.setAttribute("class", "doneTask todoItem")
+    e.parentNode.setAttribute("class", "doneTask todoItem");
+    e.nextSibling.disabled = true;  /* to disable to 'editBtn' for items that are marked as 'done' */
 }
 /* function to edit a list item */
 function editItem(e){

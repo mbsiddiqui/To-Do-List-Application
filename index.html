@@ -25,13 +25,12 @@
     <!-- guide body -->
     <div class="mainBody guideBody">
         <h2 class="guideHead">Guide:</h2>
-        <p class="guideLine"><strong>Start</strong> - This button will start the stop-watch.</p>
-        <p class="guideLine"><strong>Pause</strong> - This button will pause the running stop-watch. You can resume by
-            clicking again on start button.</p>
-        <p class="guideLine"><strong>Reset </strong> - This button will reset the stop-watch at 00:00:00 and clears the
-            "History Log".</p>
-        <p class="guideLine"><strong>Save </strong>- This button will save the current stop-watch time in the log. You
-            can view it under the "History Log" section below.</p>
+        <p class="guideLineSpecial"><b>Task name must not exceed 30 characters.</b></p>
+        <p class="guideLine"><strong>Add to list</strong> - This button will add whatever task you entered in the left hand input field, into the 'To-Do' list.</p>
+        <p class="guideLine"><strong>Clear List</strong> - This button will remove all tasks and clear the entire List. </p>
+        <p class="guideLine"><strong>Done </strong> - This button will mark the respected task as done.</p>
+        <p class="guideLine"><strong>Edit </strong>- This button will let you edit the respected task. You'll have to press 'Add to List' button to add the updated task back to list. (Task will be added in the end of current list)</p>
+        <p class="guideLine"><strong>Delete </strong>- This button will let you delete the respected task from the list. (Task once deleted can't be recovered)</p>
     </div>
 
     <!-- todo list main body -->
@@ -39,7 +38,7 @@
         <!-- input field -->
         <div class="inputField">
             <input id="userInput" class="userInput" type="text" autofocus placeholder="Enter the task" maxlength="30">
-            <button id="addBtn" class="addBtn button" onclick="addToList()"> Add to list</button>
+            <button id="addBtn" class="addBtn button" onclick="addToList()"> Add to List</button>
         </div>
 
         <!-- todo list-->
